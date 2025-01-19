@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="login-container">
+  <div class="login-box">
+   <h1>Login</h1>
+   <form id="login-form" aria-labelledby="login-title">
+   <div class="input-group">
+    <label for="username">Username</label>
+   <input type="text" id="username" placeholder="Enter your Username" required aria-required="true">
+  </div>
+ 
+  <div class="input-group">
+  <label for="password">Password</label>
+  <input type="password" id="password" placeholder="Enter your Password" required aria-required="true">
+  </div>
+ <button type="submit" class="btn-login">Login</button>
+ </form>
+  </div>
+ </div>
+
+    <div class="dashboard" style="display: none;">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Dashboard</h2>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="#"><i class="fas fa-tachometer-alt"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                    <li><a href="#"><i class="fas fa-chart-bar"></i> User Data</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header-wrapper">
+                <h1>Welcome to Your Dashboard</h1>
+            </header>
+            <section class="stats">
+                <div class="card"><h2>Followers</h2><p>1.5M</p></div>
+                <div class="card"><h2>Likes</h2><p>106k</p></div>
+                <div class="card"><h2>Comments</h2><p>65k</p></div>
+                <div class="card"><h2>Shares</h2><p>50k</p></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
